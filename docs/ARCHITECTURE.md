@@ -1,6 +1,8 @@
 # Architecture
 
-Last updated: 22 October 2026
+Last updated: 1 November 2026
+
+Hardwarethon enhancement, 31 October 2026: milestone routes now share `HardwarethonPage.astro`, `src/i18n/hardwarethon.ts` and `WorkflowPipeline.astro`. Project and milestone pipeline styles are centralized in `src/styles/pipeline.css`. See [HARDWARETHON.md](HARDWARETHON.md) for source boundaries and branch numbering.
 
 ## Status
 
@@ -208,3 +210,7 @@ Project translation dictionaries are separated into projects.nl.ts, projects.de.
 ## Sprint 10 closeout - 22 October 2026
 
 The shared contact component imports localized copy from src/i18n/contact.ts and browser submission logic from src/scripts/contact.ts. It posts to Web3Forms without an application backend. src/config/contact.ts contains the public email-scoped form identifier; PUBLIC_WEB3FORMS_ACCESS_KEY optionally overrides it for local or Actions builds. The site remains 32 static routes. See CONTACT_FORM.md for activation, states and validation.
+
+## Post 01 closeout - 1 November 2026
+
+Four milestone route wrappers use HardwarethonPage.astro and src/i18n/hardwarethon.ts. WorkflowPipeline.astro shares project pipeline styling through src/styles/pipeline.css. ConceptIntegration.astro draws responsive SVG connections from measured symbol positions. The static route count stays at 32.

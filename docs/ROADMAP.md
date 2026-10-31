@@ -1,6 +1,6 @@
 # Roadmap
 
-Last updated: 22 October 2026
+Last updated: 1 November 2026
 
 ## Current product status
 
@@ -131,3 +131,11 @@ Completed: French across eight equivalent routes, concise EN/NL/DE/FR copy, tran
 ## Sprint 10 closeout - 22 October 2026
 
 Completed: fine lilac contact panel, visible regular-weight labels, responsive name/email row, persistent field errors, localized request states and direct Web3Forms submission. A real local test was accepted by Web3Forms; mailbox receipt remains unconfirmed. Release Sprint10_082226 moves from sprint/10-contact to main. Next design priority: Hardwarethon. Automatic message-language detection and physical-device/cross-browser QA remain future work.
+
+## Continuous improvement - enhancement-post01
+
+Hardwarethon now has concise localized copy, summary figures and a three-step shared project pipeline. Texas Tech University is identified once as the owner-confirmed venue. See [HARDWARETHON.md](HARDWARETHON.md). Subsequent improvement branches increment to enhancement-post02, enhancement-post03 and so on. Desktop/mobile dark/light visual review remains pending because the browser tool failed to start with a Windows D: I/O error; static builds and all 63 local HTTP checks pass.
+
+## Post 01 closeout - 1 November 2026
+
+Hardwarethon content and presentation work is complete for enhancement-post01: three workflow stages, engineering concept symbols, one GIF with reduced-motion fallback and a single reusable event-reference button. Future improvement branches increment to enhancement-post02, enhancement-post03 and so on. Live cross-browser and physical-device visual QA remain open; the browser tool failed to start with a D: I/O error during this sprint. No production deployment is implied by pushing the feature branch.

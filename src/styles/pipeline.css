@@ -1,0 +1,23 @@
+/* Shared project and milestone pipeline; keep both presentations identical. */
+.plant-flow { display: grid; gap: 4.6rem; list-style: none; margin: clamp(2.5rem, 5vw, 4.5rem) auto 0; max-width: 48rem; padding: 0; }
+.plant-flow li { align-items: center; display: grid; gap: clamp(1.4rem, 4vw, 3rem); grid-template-columns: 5rem minmax(0, 1fr); position: relative; }
+.plant-flow li:not(:last-child)::before { background: linear-gradient(180deg, rgb(196 181 253), rgba(139, 92, 246, 0.28)); content: ""; height: 3.35rem; left: 2.48rem; position: absolute; top: calc(100% + 0.65rem); width: 1px; }
+.plant-flow li:not(:last-child)::after { border-bottom: 1px solid rgb(196 181 253); border-right: 1px solid rgb(196 181 253); content: ""; height: 0.42rem; left: 2.28rem; position: absolute; top: calc(100% + 3.55rem); transform: rotate(45deg); width: 0.42rem; }
+.plant-flow-symbol { align-items: center; background: radial-gradient(circle, rgba(124, 58, 237, 0.14), transparent 70%); border: 1px solid rgba(196, 181, 253, 0.38); border-radius: 50%; color: rgb(196 181 253); display: flex; height: 5rem; justify-content: center; position: relative; width: 5rem; }
+.plant-flow-symbol::before { animation: plant-symbol-orbit 11s linear infinite; background: conic-gradient(from 0deg, transparent 0 66%, rgba(167, 139, 250, 0.28) 76%, rgba(255, 255, 255, 0.72) 86%, rgba(196, 181, 253, 0.4) 94%, transparent 100%); border-radius: inherit; content: ""; filter: drop-shadow(0 0 0.32rem rgba(167, 139, 250, 0.34)); inset: -0.18rem; mask: radial-gradient(farthest-side, transparent calc(100% - 1px), #000 calc(100% - 1px)); pointer-events: none; position: absolute; }
+.plant-flow-symbol svg { height: 2rem; position: relative; width: 2rem; z-index: 1; }
+@keyframes plant-symbol-orbit { to { transform: rotate(360deg); } }
+.plant-flow li div > span { color: rgb(167 139 250); display: block; font-size: var(--type-caption-size); font-weight: 700; letter-spacing: var(--type-label-letter-spacing); }
+.plant-flow strong { color: rgb(226 232 240); display: block; font-size: var(--type-card-title-size); line-height: var(--type-card-title-line-height); margin-top: 0.55rem; }
+.plant-flow p { color: rgb(148 163 184); line-height: 1.7; margin-top: 0.45rem; }
+@media (max-width: 900px) {
+.plant-flow { gap: 4rem; }
+.plant-flow li { gap: 1.15rem; grid-template-columns: 3.75rem minmax(0, 1fr); }
+.plant-flow-symbol { height: 3.75rem; width: 3.75rem; }
+.plant-flow-symbol svg { height: 1.55rem; width: 1.55rem; }
+.plant-flow li:not(:last-child)::before { height: 2.85rem; left: 1.85rem; top: calc(100% + 0.55rem); }
+.plant-flow li:not(:last-child)::after { left: 1.65rem; top: calc(100% + 2.95rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+.plant-flow-symbol::before, .plant-flow li::after { animation: none !important; }
+}

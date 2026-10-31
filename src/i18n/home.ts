@@ -37,7 +37,7 @@ const en = {
     "title": "Technical milestones and recognition.",
     "description": "Academic work, international technology competitions and personal achievements that complement my engineering experience.",
     "entriesLabel": "Milestone entries",
-    "openHardwarethon": "Explore Hardwarethon Costa Rica 2019"
+    "openHardwarethon": "Explore Hardwarethon 2019"
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -226,7 +226,7 @@ const nl = {
     "title": "Technische mijlpalen en erkenning.",
     "description": "Academisch werk, internationale technologiewedstrijden en persoonlijke prestaties die mijn technische ervaring aanvullen.",
     "entriesLabel": "Mijlpalen",
-    "openHardwarethon": "Bekijk Hardwarethon Costa Rica 2019"
+    "openHardwarethon": "Bekijk Hardwarethon 2019"
   },
   "faq": {
     "eyebrow": "VEELGESTELDE VRAGEN",
@@ -415,7 +415,7 @@ const de = {
     "title": "Technische Meilensteine und Auszeichnungen.",
     "description": "Akademische Arbeiten, internationale Technologiewettbewerbe und persönliche Erfolge, die meine Ingenieurpraxis ergänzen.",
     "entriesLabel": "Meilensteine",
-    "openHardwarethon": "Hardwarethon Costa Rica 2019 ansehen"
+    "openHardwarethon": "Hardwarethon 2019 ansehen"
   },
   "faq": {
     "eyebrow": "FAQ",

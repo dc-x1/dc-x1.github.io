@@ -1,6 +1,6 @@
 # Contact form
 
-Updated: 22 October 2026. Working branch: `sprint/10-contact`.
+Updated: 1 November 2026. Working branch: `sprint/10-contact`.
 
 ## Behaviour
 
@@ -34,3 +34,7 @@ Release: Sprint10_082226, developed on sprint/10-contact and integrated into mai
 Repository audit: all 29 public assets and 49 source files are referenced, with no duplicate public files or broken internal links. Removed obsolete mail-client copy, unused submit labels and the unused flashing-error animation. The closeout also applies the compatible Astro fix for [GHSA-mpr7-6m5w-76rw](https://github.com/advisories/GHSA-mpr7-6m5w-76rw); the dependency audit then reports zero vulnerabilities.
 
 Final validation: Astro 7.4.2 builds all 32 routes; all 61 local route/asset HTTP checks pass. Contact, translation, French routing and simulated 3D controls pass. A build with a blank environment override confirms that the production public key is still present in all four contact forms. `git diff --check` passes. No additional email is sent during closeout.
+
+## Post 01 closeout - 1 November 2026
+
+This sprint changes the Hardwarethon milestone only. Contact submission and its public form identifier remain as documented. The contact regression checks are included in release validation without sending additional real emails.

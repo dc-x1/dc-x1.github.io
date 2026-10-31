@@ -33,7 +33,7 @@ export const fr = {
     "title": "Réalisations techniques et distinctions.",
     "description": "Travaux universitaires, concours technologiques internationaux et réalisations personnelles qui enrichissent mon expérience d’ingénieur.",
     "entriesLabel": "Réalisations et distinctions",
-    "openHardwarethon": "Découvrir le Hardwarethon Costa Rica 2019"
+    "openHardwarethon": "Découvrir le Hardwarethon 2019"
   },
   "faq": {
     "eyebrow": "FAQ",

@@ -1,3 +1,4 @@
+@import "./pipeline.css";
 @import "tailwindcss";
 
 @property --neon-angle {

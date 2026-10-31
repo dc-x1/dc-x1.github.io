@@ -1,6 +1,6 @@
 # Design system
 
-Last updated: 22 October 2026
+Last updated: 1 November 2026
 
 ## Direction
 
@@ -177,3 +177,7 @@ Translated controls and medical class labels follow the same shared layout in bo
 ## Sprint 10 closeout - 22 October 2026
 
 The contact panel has a fine lilac border, a restrained dark surface and the page-matched #f1eef5 light canvas. Labels retain the existing 17px regular typography. Name and email share a row from 48rem; the message spans both columns, with a single column below that breakpoint. Field errors persist until corrected, without flashing. Theme contrast was checked in the browser, including mobile viewport layout; physical-device QA remains separate.
+
+## Post 01 closeout - 1 November 2026
+
+Hardwarethon uses the existing three-step pipeline, regular-weight labels and major heading emphasis. Conceptual chip, code, materials, prototype, interface and business symbols use fine curved arrows and theme-aware lilac strokes on the page canvas. The six-symbol concept is distinct from the three-step workflow. The single GIF aligns left, with a static reduced-motion source and discreet pause control. The footer reference uses an original SVG icon through a current-colour mask, rather than an imitation official logo.

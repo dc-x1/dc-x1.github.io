@@ -41,6 +41,7 @@ npm.cmd run build
 npm.cmd audit --omit=dev
 npm.cmd run check:models
 npm.cmd run check:contact
+npm.cmd run check:hardwarethon
 npm.cmd run check:french
 npm.cmd run check:translations
 npm.cmd run audit:repo
@@ -90,3 +91,7 @@ Sprint09_082126 is delivered on `sprint/09-translations`. It adds French and rev
 ## Sprint 10 delivery
 
 Sprint10_082226 delivers the contact redesign and Web3Forms submission from `sprint/10-contact` into `main`. The public form key has a production default; the optional Actions variable overrides it. See [docs/CONTACT_FORM.md](docs/CONTACT_FORM.md). Hardwarethon design is next.
+
+## Continuous improvement
+
+`enhancement-post01` delivers `Sprint_post01_011126`: the localized Hardwarethon redesign, real GIF, engineering diagram and reusable reference icon. Subsequent branches increment to `enhancement-post02`, `enhancement-post03`, etc. See [docs/HARDWARETHON.md](docs/HARDWARETHON.md). Feature-branch pushes do not deploy Pages.

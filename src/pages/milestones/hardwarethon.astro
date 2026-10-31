@@ -1,26 +1,4 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import FloatingBackControl from "../../components/common/FloatingBackControl.astro";
+import HardwarethonPage from "../../components/pages/HardwarethonPage.astro";
 ---
-
-<BaseLayout
-  title="Hardwarethon Costa Rica 2019 | Diego Carrillo"
-  description="Third-place recognition at Hardwarethon Costa Rica 2019 for a multidisciplinary technology prototype supporting coffee production."
->
-  <section class="relative isolate overflow-hidden px-6 py-8 sm:px-10 lg:px-16">
-    <FloatingBackControl href="/#milestones" label="Back to milestones" />
-
-    <article class="mx-auto mt-12 max-w-4xl pb-12 sm:mt-14 sm:pb-14">
-      <p class="section-eyebrow text-violet-300">MILESTONE · COSTA RICA 2019</p>
-      <h1 class="interactive-heading page-title mt-5 text-slate-400">
-        Hardwarethon Costa Rica.
-      </h1>
-      <p class="body-copy-reference mt-8 max-w-3xl text-slate-300">A multidisciplinary prototype earned third place in a 48-hour technology challenge.</p>
-
-      <section class="mt-10 max-w-3xl border-t border-violet-300/15 pt-8" aria-labelledby="hardwarethon-outcome">
-        <p class="section-eyebrow text-violet-300" id="hardwarethon-outcome">THE OUTCOME</p>
-        <p class="body-copy-reference mt-4 text-slate-400">The team developed a working concept to monitor coffee production in its natural setting. It combined electronics, software, materials, UX/UI and business design to support local producers and farming communities.</p>
-      </section>
-    </article>
-  </section>
-</BaseLayout>
+<HardwarethonPage />
