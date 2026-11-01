@@ -95,3 +95,5 @@ Sprint10_082226 delivers the contact redesign and Web3Forms submission from `spr
 ## Continuous improvement
 
 `enhancement-post01` delivers `Sprint_post01_011126`: the localized Hardwarethon redesign, real GIF, engineering diagram and reusable reference icon. Subsequent branches increment to `enhancement-post02`, `enhancement-post03`, etc. See [docs/HARDWARETHON.md](docs/HARDWARETHON.md). Feature-branch pushes do not deploy Pages.
+
+Hardwarethon final refinements are published from main with commit subject `Sprint10_082226`, preserving the existing analytics integration. The official wordmark follows the Experience logo colours and heights; the reference button follows the Explore Report capsule.

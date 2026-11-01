@@ -181,3 +181,7 @@ The contact panel has a fine lilac border, a restrained dark surface and the pag
 ## Post 01 closeout - 1 November 2026
 
 Hardwarethon uses the existing three-step pipeline, regular-weight labels and major heading emphasis. Conceptual chip, code, materials, prototype, interface and business symbols use fine curved arrows and theme-aware lilac strokes on the page canvas. The six-symbol concept is distinct from the three-step workflow. The single GIF aligns left, with a static reduced-motion source and discreet pause control. The footer reference uses an original SVG icon through a current-colour mask, rather than an imitation official logo.
+
+## Main publication - 1 November 2026
+
+Hardwarethon now follows Experience branding: #c4b5fd in dark mode, #3b0764 in light mode, height 1.5rem on desktop and 1.35rem at widths up to 48rem, with original proportions. Its reference button uses the Explore Report capsule geometry, regular uppercase label, thin outline and circular arrow terminal, without the earlier chip icon.

@@ -214,3 +214,7 @@ The shared contact component imports localized copy from src/i18n/contact.ts and
 ## Post 01 closeout - 1 November 2026
 
 Four milestone route wrappers use HardwarethonPage.astro and src/i18n/hardwarethon.ts. WorkflowPipeline.astro shares project pipeline styling through src/styles/pipeline.css. ConceptIntegration.astro draws responsive SVG connections from measured symbol positions. The static route count stays at 32.
+
+## Main publication - 1 November 2026
+
+Publication integrates enhancement-post01 with the existing main analytics update. Hardwarethon uses the official SVG as a theme-coloured mask; the superseded custom chip asset is removed. Shared pipeline and responsive integration-diagram components remain in use across the localized routes.

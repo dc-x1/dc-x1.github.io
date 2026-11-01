@@ -23,7 +23,7 @@ for (const prefix of ['', 'nl/', 'de/', 'fr/']) {
 const directory = 'public/images/library/milestones/hardwarethon';
 const files = await fs.readdir(directory);
 assert.ok(!files.some(file => file.endsWith('.mp4')));
-assert.ok(files.includes('hardwarethon-icon.svg'));
+assert.ok(files.includes('hardwarethon-logo.svg'));
 const gif = await fs.readFile(`${directory}/teamwork.gif`);
 assert.match(gif.subarray(0, 6).toString(), /^GIF8[79]a$/);
-console.log('Real GIF and reusable icon verified; no local MP4 retained.');
+console.log('Real GIF and official reusable wordmark verified; no local MP4 retained.');

@@ -139,3 +139,7 @@ Hardwarethon now has concise localized copy, summary figures and a three-step sh
 ## Post 01 closeout - 1 November 2026
 
 Hardwarethon content and presentation work is complete for enhancement-post01: three workflow stages, engineering concept symbols, one GIF with reduced-motion fallback and a single reusable event-reference button. Future improvement branches increment to enhancement-post02, enhancement-post03 and so on. Live cross-browser and physical-device visual QA remain open; the browser tool failed to start with a D: I/O error during this sprint. No production deployment is implied by pushing the feature branch.
+
+## Main publication - 1 November 2026
+
+Approved enhancement-post01 changes are integrated with main for Pages publication under Sprint10_082226. Hardwarethon presentation and source cleanup are complete. Future continuous-improvement work should start at enhancement-post02. Browser and physical-device visual QA remain distinct from the automated release checks; prior browser automation failed with a Windows D: I/O error.

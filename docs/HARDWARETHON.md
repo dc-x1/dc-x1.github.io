@@ -36,3 +36,14 @@ Continuous-improvement sprints use `enhancement-post01`, `enhancement-post02`, `
 Release: Sprint_post01_011126 on enhancement-post01. The visible event-reference footer contains only one link to https://www.hardwarethon.com/, labelled Hardwarethon 2019. The user confirmed omission of the unverified registered-mark symbol. hardwarethon-icon.svg is an original reusable hardware/H pictogram stored beside the GIF and poster; it is not the official event logo. The gallery is retained here as research provenance, but removed from the page footer.
 
 Closeout validation: 32 pages built; 32 public assets and 54 source files checked; all 64 local route/asset HTTP responses passed. No unused assets or modules, byte-identical public duplicates, empty source/public directories or broken internal links were found. Hardwarethon, translations, French routing, contact, report navigation and simulated 3D controls passed; the production dependency audit reported zero vulnerabilities. The GIF conversion tools and draft closeout script were removed from ignored tmp/. Browser and physical-device visual QA remain pending as documented in ROADMAP.md.
+
+
+## Official wordmark refinement - 1 November 2026
+
+The header now uses the original transparent vector wordmark from `https://assets.website-files.com/5cc760445da5ee7ebb6cac97/5cc8b41666c4c6f5a9643072_hardwarethonlogo.svg`, stored as hardwarethon-logo.svg alongside the GIF. The original SVG preserves the letterforms and existing marks. Its on-page mask follows the Experience logos: rgb(196 181 253) in dark mode and #3b0764 in light mode, with the Capgemini/AspenTech height of 1.5rem on desktop and 1.35rem below 48rem. The original proportions are retained. The reference button remains plain Hardwarethon 2019 without an added registered-mark character, and now matches the Explore Report capsule, including its circular arrow terminal. The earlier custom chip icon is superseded and removed.
+
+## Main publication - 1 November 2026
+
+Final publication uses commit subject Sprint10_082226 as requested, following Sprint_post01_011126. The official wordmark replaces the custom chip resource. The GIF and static reduced-motion poster remain referenced. The main analytics update is retained. No additional real contact email is sent during release validation.
+
+Integrated release checks passed: 32 routes, 32 public assets, 54 reachable source files and 64 local HTTP responses; no unused assets/modules, duplicates, empty source/public directories or broken internal links. Hardwarethon, language, contact, report and simulated 3D checks pass; the dependency audit reports zero vulnerabilities. Full browser and physical-device rendering remain separate pending checks.

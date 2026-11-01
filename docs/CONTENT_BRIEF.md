@@ -213,3 +213,7 @@ The contact form uses concise EN/NL/DE/FR labels, field-specific required/email 
 ## Post 01 closeout - 1 November 2026
 
 Hardwarethon uses a concise event introduction, a coffee-production concept, a five-person multidisciplinary team paragraph and three workflow steps. Texas Tech University is mentioned once per language as the owner-confirmed venue. The single event reference reads Hardwarethon 2019 without a registered-mark symbol. No unverified sensor specifications or implementation claims are added.
+
+## Main publication - 1 November 2026
+
+The final Hardwarethon reference reads Hardwarethon 2019, with no extra registered-mark character in the button. The logo retains the original letterforms; its existing artwork marks are not recreated as prose. Event, team and prototype copy remains consistent across EN/NL/DE/FR.

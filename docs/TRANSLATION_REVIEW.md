@@ -52,3 +52,7 @@ The contact additions are localized in EN/NL/DE/FR: visible field labels, field-
 ## Post 01 closeout - 1 November 2026
 
 EN/NL/DE/FR Hardwarethon copy covers the event concept, multidisciplinary team, three workflow stages, engineering diagram and GIF controls. All retain the same reported third-place result, 48-hour duration, 2019 edition and single Texas Tech University venue attribution. The event-reference button uses the proper name Hardwarethon 2019 in every language. Unused gallery/about-link labels are removed.
+
+## Main publication - 1 November 2026
+
+Final logo/button changes share one composition across all four locales. The proper event name remains Hardwarethon 2019; each language retains its own descriptive and accessibility copy. The theme switch changes logo colour without switching or duplicating text assets.

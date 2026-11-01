@@ -114,3 +114,7 @@ Sprint10_082226 completes the contact-panel redesign and direct Web3Forms submis
 ## Post 01 closeout - 1 November 2026
 
 The first continuous-improvement sprint completes the Hardwarethon presentation: a descriptive introduction, summary figures, one real GIF, an icon-based concept diagram, a five-person team paragraph and a three-step workflow. All four languages share the composition and theme treatments. Sprint_post01_011126 is delivered on enhancement-post01; merging or deploying main is a separate action.
+
+## Main publication - 1 November 2026
+
+The approved Hardwarethon improvements are prepared for production on main: official theme-aware wordmark, report-style reference button, concise localized narrative, multidisciplinary team, three workflow steps, conceptual engineering diagram and one real GIF. The existing production analytics integration is preserved.

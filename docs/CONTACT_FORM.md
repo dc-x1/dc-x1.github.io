@@ -38,3 +38,7 @@ Final validation: Astro 7.4.2 builds all 32 routes; all 61 local route/asset HTT
 ## Post 01 closeout - 1 November 2026
 
 This sprint changes the Hardwarethon milestone only. Contact submission and its public form identifier remain as documented. The contact regression checks are included in release validation without sending additional real emails.
+
+## Main publication - 1 November 2026
+
+Hardwarethon publication preserves the existing Web3Forms integration and the main analytics change. Contact regression tests run against simulated API responses; release verification does not send a new message or independently confirm mailbox receipt.
