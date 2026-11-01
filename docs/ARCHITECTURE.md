@@ -218,3 +218,7 @@ Four milestone route wrappers use HardwarethonPage.astro and src/i18n/hardwareth
 ## Main publication - 1 November 2026
 
 Publication integrates enhancement-post01 with the existing main analytics update. Hardwarethon uses the official SVG as a theme-coloured mask; the superseded custom chip asset is removed. Shared pipeline and responsive integration-diagram components remain in use across the localized routes.
+
+## Enhancement post 02 - 1 November 2026
+
+Hardwarethon now shares AnimatedFigure.astro across three independent GIF/poster pairs. ConceptIntegration.astro connects six blocks using measured element edges and responsive SVG paths; mobile converges three inputs into a vertical sequence.

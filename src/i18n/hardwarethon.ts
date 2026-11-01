@@ -2,6 +2,7 @@ import type { Locale } from './home';
 
 const content = {
   en: {
+    prototypingLabel: 'Prototyping during Hardwarethon', prototypingCaption: 'Prototyping in action · Hardwarethon archive footage.',
     pauseAnimation: 'Pause animation', playAnimation: 'Play animation',
     back: 'Back to milestones', eyebrow: 'MILESTONE · 2019',
     description: 'Third place for a multidisciplinary prototype supporting coffee production.',
@@ -19,7 +20,8 @@ const content = {
     value: { title: 'Business model', detail: 'Connect practical use with producer needs.' },
     teamLabel: 'COLLABORATION', teamTitle: 'The team.',
     teamCopy: 'The five-person team brought together software, electronics and materials engineering. These disciplines connected information handling, the physical environment and the prototype’s construction. UX/UI and business design linked the technical concept to its use and value for coffee producers. Together, the team shaped one coherent proposal within the 48-hour challenge.',
-    outcome: 'A working concept for coffee-production monitoring, combining engineering, UX/UI and business design.',
+    outcome: 'The concept explored sensor-based monitoring to give coffee producers useful information about their beans. Monitoring bean conditions is essential to assessing quality and recognising changes during production. Electronics, software and materials engineering came together in a shared prototype, while UX/UI and business design connected the information to practical use.',
+    sensorLabel: 'Conceptual sensor inspecting four coffee beans', sensorCaption: 'Coffee-bean inspection · AI-generated conceptual illustration.',
     context: 'Texas Tech University hosted the 2019 event.',
     workflowLabel: 'THE APPROACH', workflowTitle: 'From a shared challenge to a working concept.',
     steps: [
@@ -31,6 +33,7 @@ const content = {
     videoLabel: 'Teamwork at Hardwarethon', videoCaption: 'Event atmosphere · Footage from Hardwarethon’s official website.',
   },
   nl: {
+    prototypingLabel: 'Prototypes bouwen tijdens Hardwarethon', prototypingCaption: 'Prototypen in de praktijk · Archiefbeelden van Hardwarethon.',
     pauseAnimation: 'Animatie pauzeren', playAnimation: 'Animatie afspelen',
     back: 'Terug naar mijlpalen', eyebrow: 'MIJLPAAL · 2019',
     description: 'Derde plaats voor een multidisciplinair prototype voor de koffieproductie.',
@@ -48,7 +51,8 @@ const content = {
     value: { title: 'Bedrijfsmodel', detail: 'Praktisch gebruik koppelen aan de behoeften van producenten.' },
     teamLabel: 'SAMENWERKING', teamTitle: 'Het team.',
     teamCopy: 'Het team van vijf combineerde software, elektronica en materiaalkunde. Deze vakgebieden verbonden informatieverwerking, de fysieke omgeving en de bouw van het prototype. UX/UI en het bedrijfsmodel koppelden het technische concept aan het gebruik en de waarde voor koffieproducenten. Zo werkte het team binnen 48 uur aan één samenhangend voorstel.',
-    outcome: 'Een werkend concept voor het volgen van koffieproductie, met techniek, UX/UI en een bedrijfsmodel.',
+    outcome: 'Het concept onderzocht hoe sensoren koffieproducenten bruikbare informatie over hun bonen kunnen geven. Het volgen van de toestand van de bonen is essentieel om de kwaliteit te beoordelen en veranderingen tijdens de productie te herkennen. Elektronica, software en materiaalkunde kwamen samen in een prototype; UX/UI en het bedrijfsmodel maakten de informatie praktisch bruikbaar.',
+    sensorLabel: 'Conceptuele sensor die vier koffiebonen inspecteert', sensorCaption: 'Inspectie van koffiebonen · Conceptillustratie gemaakt met AI.',
     context: 'Texas Tech University was de locatie van de editie in 2019.',
     workflowLabel: 'DE AANPAK', workflowTitle: 'Van een gezamenlijke uitdaging naar een werkend concept.',
     steps: [
@@ -60,6 +64,7 @@ const content = {
     videoLabel: 'Teamwerk bij Hardwarethon', videoCaption: 'Sfeerbeeld van het evenement · Beelden van de officiële Hardwarethon-website.',
   },
   de: {
+    prototypingLabel: 'Prototypenbau beim Hardwarethon', prototypingCaption: 'Prototypenbau in der Praxis · Archivaufnahmen von Hardwarethon.',
     pauseAnimation: 'Animation pausieren', playAnimation: 'Animation abspielen',
     back: 'Zurück zu den Meilensteinen', eyebrow: 'MEILENSTEIN · 2019',
     description: 'Dritter Platz für einen interdisziplinären Prototyp zur Unterstützung der Kaffeeproduktion.',
@@ -77,7 +82,8 @@ const content = {
     value: { title: 'Geschäftsmodell', detail: 'Die Anwendung mit dem Bedarf der Produzenten verbinden.' },
     teamLabel: 'ZUSAMMENARBEIT', teamTitle: 'Das Team.',
     teamCopy: 'Das fünfköpfige Team vereinte Softwareentwicklung, Elektronik und Werkstofftechnik. Diese Fachrichtungen verbanden die Informationsverarbeitung mit der physischen Umgebung und dem Aufbau des Prototyps. UX/UI und das Geschäftsmodell verknüpften das technische Konzept mit seiner Anwendung und dem Nutzen für Kaffeeproduzenten. So entstand innerhalb von 48 Stunden ein gemeinsamer, schlüssiger Vorschlag.',
-    outcome: 'Ein funktionsfähiges Konzept zur Überwachung der Kaffeeproduktion, das Technik, UX/UI und ein Geschäftsmodell verbindet.',
+    outcome: 'Das Konzept untersuchte, wie Sensoren Kaffeeproduzenten nützliche Informationen über ihre Bohnen liefern können. Die Überwachung des Bohnenzustands ist wesentlich, um die Qualität zu beurteilen und Veränderungen während der Produktion zu erkennen. Elektronik, Software und Werkstofftechnik flossen in einen gemeinsamen Prototyp ein; UX/UI und das Geschäftsmodell machten die Informationen praktisch nutzbar.',
+    sensorLabel: 'Konzeptioneller Sensor zur Prüfung von vier Kaffeebohnen', sensorCaption: 'Prüfung von Kaffeebohnen · KI-generierte Konzeptdarstellung.',
     context: 'Die Veranstaltung 2019 fand an der Texas Tech University statt.',
     workflowLabel: 'DAS VORGEHEN', workflowTitle: 'Von der gemeinsamen Aufgabe zum funktionsfähigen Konzept.',
     steps: [
@@ -89,6 +95,7 @@ const content = {
     videoLabel: 'Teamarbeit beim Hardwarethon', videoCaption: 'Einblick in die Veranstaltung · Aufnahmen von der offiziellen Hardwarethon-Website.',
   },
   fr: {
+    prototypingLabel: 'Prototypage au Hardwarethon', prototypingCaption: 'Le prototypage en action · Images d’archives du Hardwarethon.',
     pauseAnimation: 'Mettre l’animation en pause', playAnimation: 'Lire l’animation',
     back: 'Retour aux temps forts', eyebrow: 'TEMPS FORT · 2019',
     description: 'Troisième place pour un prototype pluridisciplinaire au service de la production de café.',
@@ -106,7 +113,8 @@ const content = {
     value: { title: 'Modèle économique', detail: 'Relier l’usage aux besoins des producteurs.' },
     teamLabel: 'COLLABORATION', teamTitle: 'L’équipe.',
     teamCopy: 'L’équipe de cinq personnes réunissait le génie logiciel, l’électronique et les matériaux. Ces disciplines reliaient le traitement de l’information, l’environnement physique et la construction du prototype. L’UX/UI et le modèle économique associaient le concept technique à son usage et à sa valeur pour les producteurs de café. Ensemble, l’équipe a construit une proposition cohérente en 48 heures.',
-    outcome: 'Un concept fonctionnel de suivi de la production de café, associant ingénierie, UX/UI et modèle économique.',
+    outcome: 'Le concept explorait le suivi par capteurs pour fournir aux producteurs des informations utiles sur leurs grains de café. Surveiller l’état des grains est essentiel pour évaluer leur qualité et repérer les changements pendant la production. Électronique, logiciel et matériaux se rejoignaient dans un prototype commun ; l’UX/UI et le modèle économique reliaient ces informations à un usage pratique.',
+    sensorLabel: 'Capteur conceptuel inspectant quatre grains de café', sensorCaption: 'Inspection de grains de café · Illustration conceptuelle générée par IA.',
     context: 'L’édition 2019 s’est tenue à Texas Tech University.',
     workflowLabel: 'LA DÉMARCHE', workflowTitle: 'D’un défi commun à un concept fonctionnel.',
     steps: [

@@ -19,43 +19,40 @@ const icons = [
     </svg>
     <div class="concept-inputs">
       {inputs.map((node, index) => <div class="concept-node concept-input" data-concept-input>
-        <span class="concept-symbol" data-concept-symbol aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d={icons[index]} /></svg></span>
+        <span class="concept-symbol" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d={icons[index]} /></svg></span>
         <div class="concept-copy"><span>{node.title}</span><p>{node.detail}</p></div>
       </div>)}
     </div>
-    {stages.map((node, index) => <div class:list={['concept-node', 'concept-stage', { 'concept-model': index === 0 }]} data-concept-stage>
-      <span class="concept-symbol" data-concept-symbol aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d={icons[index + 3]} /></svg></span>
+    {stages.map((node, index) => <div class="concept-node concept-stage" data-concept-stage>
+      <span class="concept-symbol" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d={icons[index + 3]} /></svg></span>
       <div class="concept-copy"><span>{node.title}</span><p>{node.detail}</p></div>
     </div>)}
   </div>
   <figcaption>{caption}</figcaption>
 </figure>
 <style>
-  .concept-integration { --line: rgba(196,181,253,.48); --title: #c4b5fd; --body: #94a3b8; --ring: rgba(167,139,250,.24); --canvas: #000; margin-top: 2rem; background: transparent; }
-  .concept-flow { display: grid; grid-template-columns: 1.15fr 1fr .9fr 1fr; gap: 2rem; align-items: center; position: relative; padding-block: .5rem; }
+  .concept-integration { --line: rgba(196,181,253,.5); --title: #c4b5fd; --body: #94a3b8; --ring: rgba(167,139,250,.3); --canvas: #07050b; margin-top: 2rem; background: transparent; }
+  .concept-flow { display: grid; grid-template-columns: 1.2fr 1fr .9fr 1fr; gap: 2rem; align-items: center; position: relative; padding-block: .5rem; }
   .concept-connections { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; color: var(--line); }
   .concept-connections :global(path) { fill: none; stroke: currentColor; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-  .concept-node { display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 0; position: relative; }
-  .concept-inputs { display: grid; gap: 1.75rem; }
-  .concept-symbol { display: grid; place-items: center; flex: none; width: 3.75rem; height: 3.75rem; border: 1px solid var(--ring); border-radius: 50%; color: var(--title); background: var(--canvas); }
-  .concept-symbol svg { display: block; width: 2.5rem; height: 2.5rem; }
-  .concept-model .concept-symbol { width: 4.5rem; height: 4.5rem; border-color: var(--title); box-shadow: 0 0 1.5rem rgba(139,92,246,.08); }
-  .concept-model .concept-symbol svg { width: 3rem; height: 3rem; }
-  .concept-copy { margin-top: .65rem; }
+  .concept-node { display: flex; flex-direction: column; align-items: flex-start; gap: .85rem; text-align: left; min-width: 0; position: relative; padding: 1.1rem; border: 1px solid var(--ring); border-radius: .8rem; background: var(--canvas); }
+  .concept-inputs { display: grid; gap: .9rem; }
+  .concept-input { display: grid; grid-template-columns: 2rem minmax(0, 1fr); align-items: start; gap: .75rem; padding: .9rem; }
+  .concept-symbol { display: grid; place-items: center; flex: none; width: 2.5rem; height: 2.5rem; color: var(--title); }
+  .concept-symbol svg { display: block; width: 100%; height: 100%; }
+  .concept-input .concept-symbol { width: 2rem; height: 2rem; }
+  .concept-stage { min-height: 11rem; }
   .concept-copy > span { display: block; color: var(--title); font-size: var(--type-ui-size); line-height: 1.5; font-weight: 400; overflow-wrap: anywhere; }
-  .concept-copy > p { color: var(--body); font-size: var(--type-caption-size); line-height: 1.6; margin-top: .3rem; }
+  .concept-copy > p { color: var(--body); font-size: var(--type-caption-size); line-height: 1.6; margin-top: .35rem; }
   figcaption { color: var(--body); font-size: var(--type-caption-size); line-height: 1.6; margin-top: 1.5rem; }
-  :global(html[data-theme="light"]) .concept-integration { --line: rgba(109,40,217,.43); --title: #4c1d95; --body: #475569; --ring: rgba(109,40,217,.28); --canvas: #f1eef5; }
+  :global(html[data-theme="light"]) .concept-integration { --line: rgba(109,40,217,.45); --title: #4c1d95; --body: #475569; --ring: rgba(109,40,217,.25); --canvas: #f1eef5; }
   @media (max-width: 760px) {
-    .concept-flow { grid-template-columns: minmax(0, 1fr); gap: 2.75rem; }
-    .concept-inputs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; align-items: start; padding-bottom: .75rem; }
-    .concept-input .concept-copy > span { font-size: var(--type-caption-size); }
-    .concept-input .concept-copy > p { font-size: .75rem; }
-    .concept-symbol { width: 3.25rem; height: 3.25rem; }
-    .concept-symbol svg { width: 2.2rem; height: 2.2rem; }
-    .concept-stage { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 1.1rem; text-align: left; align-items: center; }
-    .concept-stage .concept-copy { margin-top: 0; }
-    .concept-stage .concept-symbol { margin-inline: auto; }
+    .concept-flow { grid-template-columns: minmax(0, 1fr); gap: 2.75rem; padding-right: 0; }
+    .concept-inputs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; align-items: stretch; }
+    .concept-input { display: flex; flex-direction: column; align-items: center; gap: .6rem; padding: .8rem .5rem; text-align: center; }
+    .concept-input .concept-copy > span { font-size: .8rem; line-height: 1.45; min-height: 2.9em; hyphens: auto; }
+    .concept-input .concept-copy > p { font-size: .75rem; line-height: 1.55; overflow-wrap: anywhere; hyphens: auto; }
+    .concept-stage { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 1rem; min-height: 0; align-items: center; padding: 1.1rem; width: 100%; max-width: 26rem; justify-self: center; }
   }
 </style>
 <script>
@@ -69,27 +66,26 @@ const icons = [
     function draw() {
       const origin = flow.getBoundingClientRect();
       svg.setAttribute('viewBox', `0 0 ${origin.width} ${origin.height}`);
-      const symbol = (node: HTMLElement) => node.querySelector<HTMLElement>('[data-concept-symbol]')!.getBoundingClientRect();
+      const block = (node: HTMLElement) => node.getBoundingClientRect();
       const point = (r: DOMRect, side: 'left'|'right'|'top'|'bottom') => ({
         x: (side === 'left' ? r.left - 6 : side === 'right' ? r.right + 6 : r.left + r.width / 2) - origin.left,
         y: (side === 'top' ? r.top - 7 : side === 'bottom' ? r.bottom + 7 : r.top + r.height / 2) - origin.top,
       });
       const curves: string[] = [];
-      const target = point(symbol(stages[0]), mobile.matches ? 'top' : 'left');
+      const target = point(block(stages[0]), mobile.matches ? 'top' : 'left');
       inputs.forEach(node => {
-        const from = point(mobile.matches ? node.getBoundingClientRect() : symbol(node), mobile.matches ? 'bottom' : 'right');
+        const from = point(block(node), mobile.matches ? 'bottom' : 'right');
         if (mobile.matches) {
-          const bus = Math.max(...inputs.map(n => n.getBoundingClientRect().bottom)) - origin.top + 17;
-          const direction = target.x > from.x ? 1 : -1;
-          curves.push(`M${from.x},${from.y} V${bus-5} Q${from.x},${bus} ${from.x+direction*5},${bus} H${target.x-direction*5} Q${target.x},${bus} ${target.x},${bus+5} V${target.y}`);
+          const middle = (from.y + target.y) / 2;
+          curves.push(`M${from.x},${from.y} C${from.x},${middle} ${target.x},${middle} ${target.x},${target.y}`);
         } else {
           const middle = (from.x + target.x) / 2;
           curves.push(`M${from.x},${from.y} C${middle},${from.y} ${middle},${target.y} ${target.x},${target.y}`);
         }
       });
       stages.slice(0,-1).forEach((node,index) => {
-        const from = point(symbol(node), mobile.matches ? 'bottom' : 'right');
-        const to = point(symbol(stages[index+1]), mobile.matches ? 'top' : 'left');
+        const from = point(block(node), mobile.matches ? 'bottom' : 'right');
+        const to = point(block(stages[index+1]), mobile.matches ? 'top' : 'left');
         const middle = mobile.matches ? (from.y+to.y)/2 : (from.x+to.x)/2;
         curves.push(mobile.matches ? `M${from.x},${from.y} C${from.x},${middle} ${to.x},${middle} ${to.x},${to.y}` : `M${from.x},${from.y} C${middle},${from.y} ${middle},${to.y} ${to.x},${to.y}`);
       });

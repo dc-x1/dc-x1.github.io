@@ -42,3 +42,7 @@ This sprint changes the Hardwarethon milestone only. Contact submission and its 
 ## Main publication - 1 November 2026
 
 Hardwarethon publication preserves the existing Web3Forms integration and the main analytics change. Contact regression tests run against simulated API responses; release verification does not send a new message or independently confirm mailbox receipt.
+
+## Enhancement post 02 - 1 November 2026
+
+The Hardwarethon release leaves the contact integration unchanged. Contact regression checks use mocked requests; this closeout does not send another real email.

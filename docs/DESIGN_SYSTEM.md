@@ -185,3 +185,7 @@ Hardwarethon uses the existing three-step pipeline, regular-weight labels and ma
 ## Main publication - 1 November 2026
 
 Hardwarethon now follows Experience branding: #c4b5fd in dark mode, #3b0764 in light mode, height 1.5rem on desktop and 1.35rem at widths up to 48rem, with original proportions. Its reference button uses the Explore Report capsule geometry, regular uppercase label, thin outline and circular arrow terminal, without the earlier chip icon.
+
+## Enhancement post 02 - 1 November 2026
+
+Hardwarethon uses six single-border engineering blocks. Desktop retains its horizontal flow; below 760px the three input blocks form one row above the vertical stages. GIFs toggle by clicking/tapping the image or using Enter/Space, with visible focus and static reduced-motion posters.

@@ -143,3 +143,7 @@ Hardwarethon content and presentation work is complete for enhancement-post01: t
 ## Main publication - 1 November 2026
 
 Approved enhancement-post01 changes are integrated with main for Pages publication under Sprint10_082226. Hardwarethon presentation and source cleanup are complete. Future continuous-improvement work should start at enhancement-post02. Browser and physical-device visual QA remain distinct from the automated release checks; prior browser automation failed with a Windows D: I/O error.
+
+## Enhancement post 02 - 1 November 2026
+
+Approved enhancement-post02 is prepared for integration into main as Sprint_post02_011126. The next improvement branch is enhancement-post03. Physical-device and cross-browser visual QA remain open; automated checks do not establish rendered appearance.

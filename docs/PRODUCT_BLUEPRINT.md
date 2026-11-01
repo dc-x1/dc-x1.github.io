@@ -118,3 +118,7 @@ The first continuous-improvement sprint completes the Hardwarethon presentation:
 ## Main publication - 1 November 2026
 
 The approved Hardwarethon improvements are prepared for production on main: official theme-aware wordmark, report-style reference button, concise localized narrative, multidisciplinary team, three workflow steps, conceptual engineering diagram and one real GIF. The existing production analytics integration is preserved.
+
+## Enhancement post 02 - 1 November 2026
+
+Enhancement post 02 adds archival prototyping footage after the three-stage pipeline, a conceptual four-bean sensor animation, and responsive engineering blocks. All three animations have independent image controls and reduced-motion fallbacks.

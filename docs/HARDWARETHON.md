@@ -1,49 +1,37 @@
-# Hardwarethon editorial and presentation notes
+# Hardwarethon presentation and provenance
 
-Updated: 1 November 2026. Branch: `enhancement-post01`.
+Updated: 1 November 2026. Release: `Sprint_post02_011126`, branch `enhancement-post02`.
 
-## Scope
+## Content and structure
 
-The four milestone routes share `HardwarethonPage.astro` and localized copy in `src/i18n/hardwarethon.ts`. Titles, metadata and homepage navigation use Hardwarethon without a country suffix. The established year, third-place result, 48-hour challenge and coffee-production concept are retained.
+Four localized routes share HardwarethonPage.astro and src/i18n/hardwarethon.ts. The page preserves the 2019 edition, third-place result, 48-hour challenge and coffee-production concept. The owner confirmed Texas Tech University as the venue; it appears once per localized body, without identifying it as organizer.
 
-The page adds three concise summary figures and a three-step pipeline: design, prototype and outcome. Short paragraphs retain the core message; the steps do not invent sensor models, technical measurements, commercial deployment or an individual's precise contribution.
+The outcome explains sensor-based bean monitoring and quality assessment without inventing measured variables, sensor models or accuracy. The five-person team includes software, materials and electronics engineers, integrating engineering, UX/UI and business design. The shared pipeline has three stages with regular-weight titles; major headings retain their weight.
 
-The pipeline's original project CSS is shared through `src/styles/pipeline.css`, including circle sizes, connectors, icons, spacing, mobile breakpoint and reduced-motion behaviour. Existing global light-theme treatments and regular-weight pipeline titles apply to the milestone too. Major headings retain their established weight.
+## Concept diagram
 
-## Sources and attribution
+ConceptIntegration.astro renders three engineering input blocks feeding the shared prototype, followed by UX/UI and the business model. Each block has an embedded symbol and one fine border. SVG arrows terminate at block edges and update after resizing or font loading. Desktop preserves the horizontal composition. Below 760px, three inputs occupy one row and converge into the vertically arranged stages. Theme-aware surfaces and lilac strokes follow the page palette; the light canvas is #f1eef5.
 
-- [Hardwarethon website](https://www.hardwarethon.com/): multidisciplinary teams, hardware/software prototyping, business considerations and the 48-hour format. The current page describes a later edition; its dates, bootcamp length and cumulative statistics are not attributed to 2019.
-- [Official gallery](https://www.hardwarethon.com/galeria/): includes an event section and video for 2019. The gallery was consulted as a source; its footer link has been removed. No gallery image is presented as a photograph of Diego or his team.
-- The owner confirmed on 31 October 2026 that Texas Tech University hosted his 2019 edition. It is mentioned once in each localized body. The page does not claim that the university organized the competition or confuse it with the University of Texas.
-- The third-place result and coffee-production concept come from the existing portfolio record, not the event's general homepage.
+## Three animated figures
 
-## Single animated accent
+AnimatedFigure.astro provides lazy loading, localized descriptions and captions, independent click/tap or Enter/Space playback, visible keyboard focus and static reduced-motion picture sources. No visible pause text or video player is rendered. Each GIF and poster lives in public/images/library/milestones/hardwarethon/.
 
-The overhead teamwork clip is converted to a real animated GIF (560 x 315, 85 frames, approximately 14.2 seconds, 5,339,469 bytes). Original source: `https://assets.website-files.com/5cc760445da5ee7ebb6cac97/5cd2014d82934a589eef93cd_teamwork-transcode.mp4`. The GIF and the matching official static poster are stored under `public/images/library/milestones/hardwarethon/`; the local MP4 is removed.
+- teamwork.gif: 560 x 315, 85 frames, 5,339,469 bytes; first event accent, aligned left. Official source: https://assets.website-files.com/5cc760445da5ee7ebb6cac97/5cd2014d82934a589eef93cd_teamwork-transcode.mp4
+- coffee-sensor.gif: 640 x 360, 59 frames, 124,875 bytes; four roasted beans in a 2 x 2 arrangement with a gentle scan. Its caption explicitly identifies an AI-generated conceptual illustration. It replaces the supplied industrial-bearing reference, not actual project hardware. The original reference was GIPHY FWnkMzJRZr3yZBObC1; the industrial asset is no longer shipped.
+- prototyping.gif: 480 x 480, 32 frames, 2,164,291 bytes; placed after the pipeline, aligned left and capped at 30rem. Official archival source: https://assets.website-files.com/5cc760445da5ee7ebb6cac97/5cc88b759b8ac62c8dde95ce_HW2017_Stopmotion_03-transcode.mp4
 
-Only one animation appears per milestone route, aligned left and lazy-loaded. It is general event footage, not identified as Diego's team or the 2019 edition. A localized, discreet pause/play button switches between the GIF and its poster. A picture source selects the static poster for reduced motion, including without JavaScript. There is no video element or video playback bar.
+Archival footage is not presented as the owner’s team or the 2019 edition. Converted MP4 sources, draft frames and conversion tools are not shipped.
 
-## Concept integration and team
+## References and wordmark
 
-The owner confirmed a five-person multidisciplinary team including software, materials and electronics engineers. The copy does not assign headcounts to individual disciplines or invent the remaining roles. A responsive HTML/SVG conceptual diagram connects these engineering inputs to the shared prototype, UX/UI and the business model. It does not assert particular sensing hardware, networking, data processing algorithms or deployment results. Transparent theme-aware surfaces preserve the page canvas; the three inputs form a compact row above a vertical flow below 760px. Chip, code, material-layer, prototype, interface and business-value symbols replace the earlier boxes. Thin curved SVG arrows recalculate from actual element positions after resizing or font loading. The GIF aligns with the left content edge on desktop.
+The official website https://www.hardwarethon.com/ supports the multidisciplinary prototyping format. The gallery https://www.hardwarethon.com/galeria/ was research provenance; the visible footer contains only the official-site capsule labelled Hardwarethon 2019, without an added registered-mark character.
 
-## Branch convention
+The original wordmark is stored as hardwarethon-logo.svg, from https://assets.website-files.com/5cc760445da5ee7ebb6cac97/5cc8b41666c4c6f5a9643072_hardwarethonlogo.svg. Its mask matches Experience logos: #c4b5fd in dark and #3b0764 in light, at 1.5rem desktop and 1.35rem below 48rem. The original vector letterforms and embedded marks are preserved; the superseded custom icon is removed.
 
-Continuous-improvement sprints use `enhancement-post01`, `enhancement-post02`, `enhancement-post03` and so on. Inspect existing branches before choosing the next integer; do not reset the sequence or reuse an existing branch name. Work remains local until publication is requested.
+## Closeout and continuity
 
-## Post 01 closeout - 1 November 2026
+Check the build, four-language content, Hardwarethon structure, contact, report navigation, simulated model controls, dependency audit and repository references before publication. Preserve the shared GoatCounter analytics. Browser and physical-device rendering remain separate pending checks following the browser tool’s Windows D: I/O failure.
 
-Release: Sprint_post01_011126 on enhancement-post01. The visible event-reference footer contains only one link to https://www.hardwarethon.com/, labelled Hardwarethon 2019. The user confirmed omission of the unverified registered-mark symbol. hardwarethon-icon.svg is an original reusable hardware/H pictogram stored beside the GIF and poster; it is not the official event logo. The gallery is retained here as research provenance, but removed from the page footer.
+Continuous-improvement branches increment enhancement-post01, enhancement-post02, enhancement-post03 and onward. The next branch is enhancement-post03.
 
-Closeout validation: 32 pages built; 32 public assets and 54 source files checked; all 64 local route/asset HTTP responses passed. No unused assets or modules, byte-identical public duplicates, empty source/public directories or broken internal links were found. Hardwarethon, translations, French routing, contact, report navigation and simulated 3D controls passed; the production dependency audit reported zero vulnerabilities. The GIF conversion tools and draft closeout script were removed from ignored tmp/. Browser and physical-device visual QA remain pending as documented in ROADMAP.md.
-
-
-## Official wordmark refinement - 1 November 2026
-
-The header now uses the original transparent vector wordmark from `https://assets.website-files.com/5cc760445da5ee7ebb6cac97/5cc8b41666c4c6f5a9643072_hardwarethonlogo.svg`, stored as hardwarethon-logo.svg alongside the GIF. The original SVG preserves the letterforms and existing marks. Its on-page mask follows the Experience logos: rgb(196 181 253) in dark mode and #3b0764 in light mode, with the Capgemini/AspenTech height of 1.5rem on desktop and 1.35rem below 48rem. The original proportions are retained. The reference button remains plain Hardwarethon 2019 without an added registered-mark character, and now matches the Explore Report capsule, including its circular arrow terminal. The earlier custom chip icon is superseded and removed.
-
-## Main publication - 1 November 2026
-
-Final publication uses commit subject Sprint10_082226 as requested, following Sprint_post01_011126. The official wordmark replaces the custom chip resource. The GIF and static reduced-motion poster remain referenced. The main analytics update is retained. No additional real contact email is sent during release validation.
-
-Integrated release checks passed: 32 routes, 32 public assets, 54 reachable source files and 64 local HTTP responses; no unused assets/modules, duplicates, empty source/public directories or broken internal links. Hardwarethon, language, contact, report and simulated 3D checks pass; the dependency audit reports zero vulnerabilities. Full browser and physical-device rendering remain separate pending checks.
+Release validation: 32 pages built; 36 public assets and 55 reachable source files audited; all 68 local HTTP checks passed. No unused assets/modules, duplicate public files, broken internal links or empty source/public folders were found. All six regression scripts passed, git diff --check was clean, and npm audit --omit=dev reported zero vulnerabilities.

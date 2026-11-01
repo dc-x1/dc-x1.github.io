@@ -56,3 +56,7 @@ EN/NL/DE/FR Hardwarethon copy covers the event concept, multidisciplinary team, 
 ## Main publication - 1 November 2026
 
 Final logo/button changes share one composition across all four locales. The proper event name remains Hardwarethon 2019; each language retains its own descriptive and accessibility copy. The theme switch changes logo colour without switching or duplicating text assets.
+
+## Enhancement post 02 - 1 November 2026
+
+EN, NL, DE and FR share the expanded sensor/quality context and localized animation labels and captions. The coffee illustration is explicitly identified as AI-generated and conceptual; archival event footage is not attributed to the owner’s 2019 team.

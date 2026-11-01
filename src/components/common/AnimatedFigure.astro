@@ -1,0 +1,49 @@
+---
+interface Props {
+  id: string; src: string; poster: string; width: number; height: number;
+  label: string; caption: string; pauseLabel: string; playLabel: string;
+  sourceUrl?: string;
+}
+const { id, src, poster, width, height, label, caption, pauseLabel, playLabel, sourceUrl = 'https://www.hardwarethon.com/' } = Astro.props;
+---
+<figure class:list={['animated-figure', { 'animated-figure--square': width === height }]} data-animated-figure>
+  <button class="animation-toggle" type="button" data-animation-toggle data-label={label} data-pause={pauseLabel} data-play={playLabel} aria-label={`${label}: ${pauseLabel}`} aria-pressed="false" aria-controls={id}>
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset={poster} />
+      <img id={id} data-animated-image data-poster={poster} src={src} alt={label} width={width} height={height} loading="lazy" decoding="async" />
+    </picture>
+  </button>
+  <figcaption>{sourceUrl ? <a href={sourceUrl} target="_blank" rel="noopener noreferrer">{caption}</a> : caption}</figcaption>
+</figure>
+<style>
+  .animated-figure { margin: 2.5rem 0 0; max-width: 40rem; }
+  .animated-figure--square { max-width: 30rem; }
+  .animated-figure img { display: block; width: 100%; height: auto; border: 1px solid rgba(196,181,253,.28); border-radius: .85rem; background: transparent; }
+  .animation-toggle { display: block; width: 100%; padding: 0; border: 0; border-radius: .85rem; background: transparent; color: #c4b5fd; cursor: pointer; }
+  .animation-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: .3rem; }
+  figcaption { margin-top: .65rem; color: rgb(148 163 184); font-size: var(--type-caption-size); line-height: 1.6; }
+  figcaption a:hover { text-decoration: underline; text-underline-offset: .2em; }
+  :global(html[data-theme="light"]) .animation-toggle { color: #4c1d95; }
+  :global(html[data-theme="light"]) .animated-figure img { border-color: rgba(109,40,217,.22); }
+  :global(html[data-theme="light"]) figcaption { color: #475569; }
+</style>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-animated-figure]').forEach(figure => {
+    const animation = figure.querySelector<HTMLImageElement>('[data-animated-image]')!;
+    const toggle = figure.querySelector<HTMLButtonElement>('[data-animation-toggle]')!;
+    const reducedSource = figure.querySelector<HTMLSourceElement>('picture source')!;
+    const source = animation.getAttribute('src')!;
+    const poster = animation.dataset.poster!;
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let paused = motion.matches;
+    const update = () => {
+      animation.src = paused ? poster : source;
+      reducedSource.srcset = paused ? poster : source;
+      toggle.setAttribute('aria-label', `${toggle.dataset.label}: ${paused ? toggle.dataset.play : toggle.dataset.pause}`);
+      toggle.setAttribute('aria-pressed', String(paused));
+    };
+    toggle.addEventListener('click', () => { paused = !paused; update(); });
+    motion.addEventListener('change', () => { if (motion.matches) paused = true; update(); });
+    update();
+  });
+</script>

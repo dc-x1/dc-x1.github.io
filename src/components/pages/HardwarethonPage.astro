@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import FloatingBackControl from '../common/FloatingBackControl.astro';
 import WorkflowPipeline from '../common/WorkflowPipeline.astro';
 import ConceptIntegration from '../common/ConceptIntegration.astro';
+import AnimatedFigure from '../common/AnimatedFigure.astro';
 import { getHardwarethonContent } from '../../i18n/hardwarethon';
 import type { Locale } from '../../i18n/home';
 interface Props { locale?: Locale }
@@ -27,21 +28,17 @@ const home = locale === 'en' ? '/' : `/${locale}/`;
           <div><dt>{copy.facts[index]}</dt><dd>{value}</dd></div>
         ))}
       </dl>
-      <figure class="hardwarethon-film">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcset="/images/library/milestones/hardwarethon/teamwork-poster.jpg" />
-          <img id="hardwarethon-animation" data-hardwarethon-gif src="/images/library/milestones/hardwarethon/teamwork.gif" alt={copy.videoLabel}
-            width="560" height="315" loading="lazy" decoding="async" />
-        </picture>
-        <button class="hardwarethon-motion" type="button" data-motion-toggle data-pause={copy.pauseAnimation} data-play={copy.playAnimation} aria-pressed="false" aria-controls="hardwarethon-animation">{copy.pauseAnimation}</button>
-        <figcaption id="hardwarethon-film-caption">
-          <a href="https://www.hardwarethon.com/" target="_blank" rel="noopener noreferrer">{copy.videoCaption}</a>
-        </figcaption>
-      </figure>
+      <AnimatedFigure id="hardwarethon-animation"
+        src="/images/library/milestones/hardwarethon/teamwork.gif" poster="/images/library/milestones/hardwarethon/teamwork-poster.jpg"
+        width={560} height={315} label={copy.videoLabel} caption={copy.videoCaption} pauseLabel={copy.pauseAnimation} playLabel={copy.playAnimation} />
       <section class="hardwarethon-section" aria-labelledby="hardwarethon-outcome">
         <p class="section-eyebrow text-violet-300">{copy.outcomeLabel}</p>
         <h2 class="section-title mt-5" id="hardwarethon-outcome">{copy.outcomeTitle}</h2>
         <p class="body-copy-reference mt-6 max-w-3xl text-slate-400">{copy.outcome}</p>
+        <AnimatedFigure id="hardwarethon-sensors"
+          src="/images/library/milestones/hardwarethon/coffee-sensor.gif" poster="/images/library/milestones/hardwarethon/coffee-sensor-poster.jpg"
+          width={640} height={360} label={copy.sensorLabel} caption={copy.sensorCaption} pauseLabel={copy.pauseAnimation} playLabel={copy.playAnimation}
+          sourceUrl="" />
         <div class="hardwarethon-integration">
           <p class="section-eyebrow text-violet-300">{copy.integrationLabel}</p>
           <ConceptIntegration label={copy.integrationLabel} caption={copy.integrationCaption} inputs={copy.inputs} stages={[copy.model, copy.interface, copy.value]} />
@@ -58,6 +55,9 @@ const home = locale === 'en' ? '/' : `/${locale}/`;
         <h2 class="section-title mt-5" id="hardwarethon-workflow">{copy.workflowTitle}</h2>
         <WorkflowPipeline label={copy.workflowTitle} steps={copy.steps} />
       </section>
+      <AnimatedFigure id="hardwarethon-prototyping"
+        src="/images/library/milestones/hardwarethon/prototyping.gif" poster="/images/library/milestones/hardwarethon/prototyping-poster.jpg"
+        width={480} height={480} label={copy.prototypingLabel} caption={copy.prototypingCaption} pauseLabel={copy.pauseAnimation} playLabel={copy.playAnimation} />
       <footer class="hardwarethon-sources" aria-label={copy.sourcesLabel}>
         <p class="section-eyebrow text-violet-300">{copy.sourcesLabel}</p>
         <div>
@@ -74,17 +74,7 @@ const home = locale === 'en' ? '/' : `/${locale}/`;
   .hardwarethon-wordmark { display: block; height: 1.5rem; aspect-ratio: 479.8 / 52.3; max-width: 100%; background: rgb(196 181 253); mask: url('/images/library/milestones/hardwarethon/hardwarethon-logo.svg') left center / contain no-repeat; }
   :global(html[data-theme="light"]) .hardwarethon-wordmark { background: #3b0764; }
   @media (max-width: 48rem) { .hardwarethon-wordmark { height: 1.35rem; } }
-  .hardwarethon-film { margin: 2.5rem 0 0; max-width: 40rem; }
   .hardwarethon-integration { margin-top: 2rem; margin-bottom: 2rem; }
-  .hardwarethon-film img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid rgba(196,181,253,.28); border-radius: .85rem; background: transparent; }
-  .hardwarethon-motion { display: none; margin-top: .6rem; padding: .2rem 0; color: #c4b5fd; font-size: var(--type-caption-size); cursor: pointer; }
-  .hardwarethon-motion:hover { text-decoration: underline; text-underline-offset: .2em; }
-  .hardwarethon-motion:focus-visible { outline: 1px solid currentColor; outline-offset: .3rem; }
-  :global(html[data-theme="light"]) .hardwarethon-motion { color: #4c1d95; }
-  .hardwarethon-film figcaption { margin-top: .65rem; color: rgb(148 163 184); font-size: var(--type-caption-size); line-height: 1.6; }
-  .hardwarethon-film a:hover { text-decoration: underline; text-underline-offset: .2em; }
-  :global(html[data-theme="light"]) .hardwarethon-film img { border-color: rgba(109,40,217,.22); }
-  :global(html[data-theme="light"]) .hardwarethon-film figcaption { color: #475569; }
   .hardwarethon-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2.5rem; }
   .hardwarethon-facts > div { display: flex; flex-direction: column-reverse; gap: .5rem; border-top: 1px solid rgba(196,181,253,.3); padding-top: 1.25rem; }
   .hardwarethon-facts dt { color: rgb(148 163 184); font-size: var(--type-caption-size); line-height: 1.6; overflow-wrap: anywhere; }
@@ -104,22 +94,3 @@ const home = locale === 'en' ? '/' : `/${locale}/`;
   :global(html[data-theme="light"]) .hardwarethon-reference { background: rgba(76,29,149,.15); border-color: rgba(167,139,250,.42); color: #6d28d9; }
   :global(html[data-theme="light"]) .hardwarethon-facts dt { color: #475569; }
 </style>
-<script>
-  const animation = document.querySelector<HTMLImageElement>('[data-hardwarethon-gif]');
-  const toggle = document.querySelector<HTMLButtonElement>('[data-motion-toggle]');
-  if (animation && toggle) {
-    const animatedSource = animation.getAttribute('src')!;
-    const poster = '/images/library/milestones/hardwarethon/teamwork-poster.jpg';
-    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let paused = motion.matches;
-    const update = () => {
-      animation.src = paused ? poster : animatedSource;
-      toggle.textContent = paused ? toggle.dataset.play! : toggle.dataset.pause!;
-      toggle.setAttribute('aria-pressed', String(paused));
-      toggle.style.display = motion.matches ? 'none' : 'inline-block';
-    };
-    toggle.addEventListener('click', () => { paused = !paused; update(); });
-    motion.addEventListener('change', () => { if (motion.matches) paused = true; update(); });
-    update();
-  }
-</script>
